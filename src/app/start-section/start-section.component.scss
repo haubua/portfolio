@@ -1,0 +1,39 @@
+.blackLine {
+    margin-left: 23px;
+    width: 534px;
+    height: 3px;
+    background-color: black;
+}
+
+.name {
+    color: #00BC8F;
+    font-family: 'Overpass';
+    font-size: 40px;
+    font-weight: 700;
+    margin-left: 15px;
+}
+
+h1 {
+    font-size: 110px;
+    font-weight: 800;
+    margin: 0;
+}
+
+
+.arrowContainer {
+    height: 100px;
+    overflow-y: hidden;
+}
+
+.arrow {
+    animation: arrowAnimation 2s infinite;
+}
+
+@keyframes arrowAnimation {
+    0% {
+        transform: translateY(-200%)
+    }
+    100% {
+        transform: translateY(200%);
+    }
+}

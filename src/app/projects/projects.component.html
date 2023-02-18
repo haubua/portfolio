@@ -1,1 +1,23 @@
-<p>projects works!</p>
+<div>
+    <div class="projects" *ngFor="let project of projects; let i=index; let even=even; let odd=odd">
+        <div class="projects-number" [ngClass]="{flexStart: odd}">{{ i+1 }} / {{ projects.length }}</div>
+        <div class="container" [ngClass]="{left: even, right: odd}">
+            <div class="imgContainer" [ngClass]="{right: odd, left: even, imgContainerLeft: even, imgContainerRight: odd}">
+                <img [ngClass]="{arrowCircleLeft: even, arrowCircleRight: odd}" src="../../assets/img/arrowCircle.png" alt="">
+                <img class="img" src="../../assets/img/{{ projects[i] }}" alt="">
+            </div>
+
+            <div class="description" [ngClass]="{marginLeft: even, marginRight: odd}">
+                <h3>{{ projectHeadline[i] }}</h3>
+                <div>{{ projectTypes[i] }}</div>
+                <span>{{ projectDescription[i] }}</span>
+                <div class="button-container" [ngClass]="{buttonLeft: even, buttonRight: odd}">
+                    <button [ngStyle]="{'curser': 'pointer'}">Try out</button>
+                    <button>GitHub</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>

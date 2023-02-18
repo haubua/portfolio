@@ -1,1 +1,30 @@
-<p>about-me works!</p>
+<div [ngStyle]="{'display': 'flex', 'margin-left.vw': '17', 'margin-right.vw': '17'}">
+    <div [ngStyle]="{'display': 'flex', 'flex-direction': 'column', 'margin-right.vw': '10'}">
+        <h2 [ngStyle]="{'font-size.px': '78'}">About me</h2>
+        <span [ngStyle]="{'font-size.px': '20', 'font-family': 'Overpass'}">I am a frontend developer from near vienna.
+            <br>I am a front-end developer from the vicinity of Vienna.
+
+            The logic behind programming fascinates me the most because everything in frontend development can be
+            logically explained and put into practice. I am highly patient and love to work on my projects until every
+            bug is fixed.
+            <br>
+            <br>
+            I enjoy traveling and participating in activities, such as tennis, hiking, snowboarding, and wakeboarding in the
+            summer, as well as going to the gym.
+            <br>
+            <br>
+            I am interested in a part-time or full-time career and am excited to apply my programming knowledge. 
+            <br>
+            <br>
+            Please get in touch with me if you think I'd be a good fit for what you are looking for.</span>
+        <div [ngStyle]="{'display': 'flex', 'justify-content': 'center', 'width.%': '100'}">
+            <button [ngStyle]="{'width.px': '213', 'height.px': '68', 'border': '4px solid black', 
+                                'padding-left': '60', 'padding-right': '60', 'padding-top': '20', 
+                                'padding-bottom': '20', 'font-size.px': '20', 'margin-top.vh': '10'}">Contact me!
+            </button>
+        </div>
+
+    </div>
+
+    <img class="portrait" src="../../assets/img/rob.jpg" alt="portrait">
+</div>

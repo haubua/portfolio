@@ -1,1 +1,27 @@
-<p>skills works!</p>
+<div
+    [ngStyle]="{'display': 'flex', 'margin-left.vw': '17', 'margin-right.vw': '17', 'margin-top.vh': '15', 'justify-content': 'flex-end'}">
+    <img [ngStyle]="{ 'margin-right.px': '200', 'height.px': '200'}" src="../../assets/img/arrowBig.png" alt="">
+</div>
+<div [ngStyle]="{'display': 'flex', 'flex-direction': 'column', 'align-items': 'center',  'margin-left.vw': '17', 
+'margin-right.vw': '17'}">
+<h2 [ngStyle]="{'margin-bottom.px': '-43', 'background-color': '#F5F5F5', 'z-index': '5', 'padding-left.px': '15', 
+                    'padding-right.px': '15', 'font-size.px': '78'}">
+            My skills
+        </h2>
+    <div [ngStyle]="{'display': 'flex', 'flex-wrap': 'wrap','justify-content': 'center', 'border': '2px solid black'}">
+        <div
+            [ngStyle]="{'display': 'flex', 'flex-wrap': 'wrap','justify-content': 'center', 'padding-left.px': '150', 'padding-right.px': '150', 'padding-top.px': '100', 'padding-bottom.px': '100'}">
+            <div *ngFor="let skill of skillImg; let i = index"
+                [ngStyle]="{'display': 'flex', 'flex-direction': 'column', 'align-items': 'center'}">
+                <img [ngStyle]="{'margin-left.px': '50', 'margin-right.px': '50', 'margin-top.px': '50', 'height.px': '75', 'width.px': '75'}"
+                    src="../../assets/img/{{ skill }}" alt="">
+                <span
+                    [ngStyle]="{'display': 'flex', 'text-align': 'center', 'margin-top.px': '15', 'font-family': 'Overpass', 'font-weight': '700', 'max-width.px': '80', 'word-break': 'break-word'}">{{
+                    skillText[i] }}</span>
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </div>
+</div>

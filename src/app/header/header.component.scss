@@ -1,0 +1,27 @@
+header {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 17vw;
+    padding-right: 17vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    background-color: #F5F5F5;
+    z-index: 5;
+    // border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+
+.dropdownIcon {
+    height: 20px;
+}
+
+.logo {
+    height: 65px;
+    width: 65px;
+}
