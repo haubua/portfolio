@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  scrollToTop() {
+    window.scrollTo(0, 0);
+  }
 }

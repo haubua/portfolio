@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ContactMeComponent {
 
+  scrollToTop() {
+    window.scrollTo(0, 0);
+  }
 }

@@ -1,6 +1,8 @@
 <div>
     <div class="contactMe">
-        <h1>Say Hi!</h1>
+        <div class="headline">
+            <h1>Say Hi!</h1>
+        </div>
         <div class="container">
             <span class="firstRow">Want to discuss a new project?</span>
             <span class="secondRow">Say hello! let's discuss your ideas and make it happen</span>
@@ -10,7 +12,7 @@
                 <textarea name="" id="" cols="30" rows="10" placeholder="Your message" [ngStyle]="{'position': 'absolute', 'top': '490px'}"></textarea>
                 <button [ngStyle]="{'position': 'absolute', 'top': '690px'}">Send message</button>
             </form>
-            <img src="../../assets/img/whiteArrow.png" alt="">
+            <img src="../../assets/img/whiteArrow.png" alt="" (click)="scrollToTop()">
         </div>
     </div>
 </div>

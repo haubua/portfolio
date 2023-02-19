@@ -1,5 +1,11 @@
-<div>
+<footer>
     <div>
-        <img src="../../assets/img/logo_white.png" alt="">
+        <img class="logo" src="../../assets/img/logo_white.png" alt="" (click)="scrollToTop()">
+        <div [ngStyle]="{'color': '#FFFCF3', 'font-family': 'poppins'}">&copy; Robert Hahn 2023</div>
     </div>
-</div>
+    <div class="links">
+        <img class="gitIcon" src="../../assets/img/git.png" alt="" [ngStyle]="{'filter': 'invert(100%)'}">
+        <img src="../../assets/img/emailButton.png" alt="">
+        <img src="../../assets/img/linkedinButton.png" alt="">
+    </div>
+</footer>

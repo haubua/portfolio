@@ -1,0 +1,38 @@
+footer {
+    background-color: black;
+    padding-left: 17vw;
+    padding-right: 17vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 150px;
+    
+    .logo {
+        height: 65px;
+        width: 65px;
+        margin-bottom: 10px;
+       cursor: pointer;
+    }
+
+    .links {
+        img {
+            height: 42px;
+            width: 42px;
+            margin-left: 17px;
+            transition: linear 125ms;
+            padding: 5px;
+            cursor: pointer;
+            &:hover {
+                transform: translateY(-10px);
+                // position: relative;
+                // bottom: 10px;
+            }
+        }
+        .gitIcon {
+            height: 32px;
+            width: 32px;
+        }
+    }   
+}

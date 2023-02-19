@@ -26,11 +26,18 @@
     h1 {
         font-size: 78px;
         font-weight: 800;
+        margin-top: 0px;
+        color: #FFFCF3;
+        &:hover {
+            color: #13C197;
+        }
+    }
+
+    .headline {
         margin-bottom: 80px;
         width: 100%;
         display: flex;
         text-align: start;
-        color: #FFFCF3;
     }
 
     form {
@@ -68,9 +75,6 @@
         background-color: #000000;
         border: 4px solid transparent;
         border-bottom: 2px solid #FFFCF3;
-        // border-top: none;
-        // border-left: none;
-        // border-right: none;
         padding-top: 15px;
         padding-bottom: 15px;
         padding-left: 25px;
@@ -79,6 +83,7 @@
         width: 550px;
         font-size: 16px;
         font-weight: 400;
+        color: #FFFCF3;
     }
 
     input:hover:not(:focus) {
@@ -89,15 +94,13 @@
         background-color: #000000;
         border: 4px solid transparent;
         border-bottom: 2px solid #FFFCF3;
-        // border-top: none;
-        // border-left: none;
-        // border-right: none;
         margin-top: 20px;
         padding-top: 15px;
         padding-bottom: 15px;
         padding-left: 25px;
         padding-right: 25px;
         width: 550px;
+        color: #FFFCF3;
     }
 
     textarea:hover:not(:focus) {
@@ -111,7 +114,6 @@
         padding-top: 12px;
         padding-bottom: 12px;
         font-size: 23px;
-        font-weight: 400;
         cursor: pointer;
         background-color: #000000;
         color: #FFFCF3;
@@ -123,7 +125,7 @@
             transition: 150ms ease-in-out;
             padding-left: 45px;
             padding-right: 45px;
-            font-weight: 800;
+            font-weight: 600;
         }
     }
 
@@ -131,6 +133,25 @@
         position: absolute;
         top: 700px;
         right: 17vw;
+        cursor: pointer;
+        height: 65px;
+        width: 35px;
+        transform-origin: bottom;
+        transition: linear 250ms;
+        &:hover {
+            transform: scaleY(1.4);
+        }
+        
+    }
+}
+
+@keyframes arrowAnimation {
+    0% {
+        height: 10px;
+    }
+
+    100% {
+        height: 200px;
     }
 }
 

@@ -6,6 +6,10 @@
     h1{
         font-size: 78px;
         font-weight: 800;
+        cursor:context-menu;
+        &:hover {
+            color: #13C197;
+        }
     }
     span {
         font-family: 'Overpass';
