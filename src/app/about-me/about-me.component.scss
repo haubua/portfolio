@@ -1,6 +1,54 @@
 .portrait {
     height: 520px;
     width: 400px;
-    object-fit:cover;
+    object-fit: cover;
     margin-top: 222.48px;
 }
+
+.aboutContainer {
+    display: flex;
+    margin-left: 17vw;
+    margin-right: 17vw;
+
+    h2 {
+        font-size: 78px;
+        font-weight: 800;
+        &:hover {
+            color: #13C197;
+        }
+    }
+
+    span {
+        font-size: 20px;
+        font-family: 'Overpass';
+    }
+
+    .buttonContainer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    button {
+        // width: 213px;
+        // height: 68px;
+        border: 4px solid black;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 20px;
+        margin-top: 10vh;
+        transition: 150ms ease-in-out;
+        cursor: pointer;
+        &:hover {
+            
+            padding-left: 70px;
+            padding-right: 70px;
+            font-weight: 600;
+        }
+    }
+}
+
+
+

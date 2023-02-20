@@ -1,38 +1,69 @@
-.blackLine {
-    margin-left: 23px;
-    width: 534px;
-    height: 3px;
-    background-color: black;
+.startContainer {
+    height: 81vh;
+    margin-top: 19vh;
+
+    h1 {
+        font-size: 110px;
+        font-weight: 800;
+        margin: 0;
+    }
+
+    .blackLine {
+        margin-left: 23px;
+        width: 534px;
+        height: 3px;
+        background-color: black;
+    }
+
+    .name {
+        color: #00BC8F;
+        font-family: 'Overpass';
+        font-size: 40px;
+        font-weight: 700;
+        margin-left: 15px;
+    }
+
 }
 
-.name {
-    color: #00BC8F;
-    font-family: 'Overpass';
-    font-size: 40px;
-    font-weight: 700;
-    margin-left: 15px;
+.startBottom {
+    display: flex;
+    align-items: center;
+    margin-left: 17vw;
+    margin-right: 17vw;
+    margin-top: 25vh;
+    justify-content: space-between;
+
+    span {
+        font-family: 'Overpass';
+        font-size: 20px;
+    }
+
+    .email {
+        transform: rotate(270deg);
+        font-family: 'Overpass';
+        position: relative;
+        bottom: 40px;
+        left: -103px;
+        font-size: 23px;
+    }
+
+    .arrowContainer {
+        height: 100px;
+        overflow-y: hidden;
+    }
+
+    .arrow {
+        animation: arrowAnimation 2s infinite;
+    }
 }
 
-h1 {
-    font-size: 110px;
-    font-weight: 800;
-    margin: 0;
-}
 
-
-.arrowContainer {
-    height: 100px;
-    overflow-y: hidden;
-}
-
-.arrow {
-    animation: arrowAnimation 2s infinite;
-}
 
 @keyframes arrowAnimation {
     0% {
         transform: translateY(-200%)
     }
+
     100% {
         transform: translateY(200%);
     }

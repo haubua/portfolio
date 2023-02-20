@@ -1,12 +1,11 @@
 <div class="arrowContainer">
-    <img src="../../assets/img/arrowBig.png" alt="">
+    <img id="skillsArrow" src="../../assets/img/arrowBig.png" alt="">
 </div>
 <div class="skillsContainer">
     <h2>My skills</h2>
     <div [ngStyle]="{'display': 'flex', 'flex-wrap': 'wrap','justify-content': 'center', 'border': '2px solid black'}">
         <div class="iconContainer">
-            <div *ngFor="let skill of skillImg; let i = index"
-                [ngStyle]="{'display': 'flex', 'flex-direction': 'column', 'align-items': 'center'}">
+            <div class="skill" *ngFor="let skill of skillImg; let i = index">
                 <div class="imgContainer">
                     <img src="../../assets/img/{{ skill }}" alt="">
                 </div>

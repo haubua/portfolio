@@ -1,4 +1,4 @@
-<div [ngStyle]="{'height.vh': '81', 'margin-top.vh': '19'}">
+<div class="startContainer">
     <div [ngStyle]="{'display': 'flex', 'flex-direction': 'column', 'align-items': 'center'}">
         <h1>Frontend</h1>
         <h1>Developer</h1>
@@ -7,18 +7,16 @@
         </div>
     </div>
 
-    <div [ngStyle]="{'display': 'flex', 'align-items': 'center', 'margin-left.vw': '17', 
-                     'margin-right.vw': '17', 'margin-top.vh': '25', 'justify-content': 'space-between'}">
-        <span [ngStyle]="{'transform': 'rotate(270deg)', 'font-family': 'Overpass', 'position': 'relative', 
-                    'bottom.px': '40', 'left.px': '-103', 'font-size.px': '23'}">
+    <div class="startBottom">
+        <span class="email">
             robert.hahn91@gmx.at
         </span>
         <div [ngStyle]="{'display': 'flex', 'flex-direction': 'column', 'align-items': 'center'}">
             <div class="arrowContainer">
                 <img src="../../assets/img/arrow.png" class="arrow" alt="">
             </div>
-            <span [ngStyle]="{'font-family': 'Overpass', 'font-size.px': '20'}">Scroll</span>
-            <span [ngStyle]="{'font-family': 'Overpass', 'font-size.px': '20'}">Down</span>
+            <span>Scroll</span>
+            <span>Down</span>
         </div>
     </div>
 </div>
