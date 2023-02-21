@@ -1,4 +1,16 @@
 <header>
     <img src="../../assets/img/logo_white.png" class="logo" alt="" (click)="scrollToTop()">
-    <img src="../../assets/img/dropdownIcon.png" class="dropdownIcon" alt="">
+    <img src="../../assets/img/dropdownIcon.png" class="dropdownIcon" alt="" (click)="openMenu()">
 </header>
+<div id="dropdown" *ngIf="!this.dropdown">
+    <header>
+        <img src="../../assets/img/logo_white.png" class="logo" alt="" (click)="scrollToTop()">
+        <img src="../../assets/img/closeIcon.svg" class="closeIcon" alt="" (click)="closeMenu()">
+    </header>
+    <div class="navContainer">
+        <div class="nav">About me</div>
+        <div class="nav">My skills</div>
+        <div class="nav">Portfolio</div>
+    </div>
+    <div class="slantedContainer"></div>
+</div>

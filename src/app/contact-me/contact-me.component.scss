@@ -1,3 +1,38 @@
+// .slantedContainer {
+//     height: 250px;
+//     width: 100%;
+//     position: relative;
+//     z-index: 9;
+//     margin-bottom: 0px;
+//     background: linear-gradient(to bottom left, #F5F5F5 calc(50% - 2px), red calc(50% - 1px), red calc(50% + 1px), #000000 calc(50% + 2px)) no-repeat 0px 0px / 100vw 250px;
+// }
+
+.headline {
+    // margin-bottom: 80px;
+    display: flex;
+    padding-left: 17vw;
+    padding-right: 17vw;
+    background: linear-gradient(to bottom left, #F5F5F5 calc(50% - 1px), #000000 calc(50% + 1px)) no-repeat 0px 0px / 100vw 250px;
+}
+
+h1 {
+    position: relative;
+    z-index: 10;
+    
+    font-size: 78px;
+    font-weight: 800;
+    margin-top: 196px;
+    margin-bottom: -39px;
+    color: #FFFCF3;
+   
+    // margin-top: 100px;
+   
+    // height: 300px;
+    &:hover {
+        color: #13C197;
+    }
+}
+
 .contactMe {
     display: flex;
     flex-direction: column;
@@ -6,39 +41,12 @@
     padding-right: 17vw;
     background-color: #000000;
     position: relative;
-    margin-top: 200px;
     height: 790px;
+    z-index: 8;
+   
+    
 
-    ::after {
-        content: '';
-        position: absolute;
-        top: -240px;
-        bottom: 100px;
-        left: 0;
-        right: 0;
-        transform-origin: left top;
-        transform: skewY(7deg);
-        background-color: #000000;
-        z-index: -1;
-
-    }
-
-    h1 {
-        font-size: 78px;
-        font-weight: 800;
-        margin-top: 0px;
-        color: #FFFCF3;
-        &:hover {
-            color: #13C197;
-        }
-    }
-
-    .headline {
-        margin-bottom: 80px;
-        width: 100%;
-        display: flex;
-        text-align: start;
-    }
+    
 
     form {
         display: flex;
@@ -101,6 +109,7 @@
         padding-right: 25px;
         width: 550px;
         color: #FFFCF3;
+        resize: none;
     }
 
     textarea:hover:not(:focus) {
@@ -138,10 +147,11 @@
         width: 35px;
         transform-origin: bottom;
         transition: linear 250ms;
+
         &:hover {
             transform: scaleY(1.4);
         }
-        
+
     }
 }
 
@@ -165,4 +175,74 @@
 
 input:focus {
     border: 2px solid #FFFCF3;
+    ::placeholder {
+        color: #000000;
+    }
 }
+
+input:focus::placeholder {
+        color: #000000;
+}
+
+textarea:focus::placeholder {
+    color: #000000;
+
+}
+
+#yourName {
+    display: none;
+    font-size: 25px;
+    color: #FFFCF3
+}
+
+#nameInput:focus-within>#yourName {
+    display: flex;
+    position: absolute;
+    background-color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 22px;
+    padding-left: 5px;
+    padding-right: 5px;
+    top: 8px;
+}
+
+#emailInput:focus-within>#yourEmail {
+    display: flex;
+    position: absolute;
+    background-color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 22px;
+    padding-left: 5px;
+    padding-right: 5px;
+    top: 8px;
+}
+
+#yourEmail {
+    display: none;
+    font-size: 25px;
+    color: #FFFCF3
+}
+
+#messageInput:focus-within>#yourMessage {
+    display: flex;
+    position: absolute;
+    background-color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 22px;
+    padding-left: 5px;
+    padding-right: 5px;
+    top: 8px;
+}
+
+#yourMessage {
+    display: none;
+    font-size: 25px;
+    color: #FFFCF3
+}
+
+// #nameInput:target-within
+// outline: 4px solid white;
+// }

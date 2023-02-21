@@ -13,14 +13,13 @@
     margin-left: 17vw;
     margin-right: 17vw;
     margin-top: 10vh;
-    margin-bottom: 270px;
     flex-direction: column;
 }
 
 .img {
     width: 520px;
     height: 310px;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .projects-number {
@@ -131,7 +130,7 @@
         div {
             color: #13C197;
             font-weight: 600;
-            font-family: Overpass;
+            font-family: 'Overpass';
             font-size: 26px;
         }
 

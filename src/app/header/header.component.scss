@@ -1,27 +1,126 @@
 header {
-    height: 50px;
+    height: 6vh;
     display: flex;
     justify-content: space-between;
     padding-left: 17vw;
     padding-right: 17vw;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     align-items: center;
     position: fixed;
-    top:0;
+    top: 0;
     left: 0;
     right: 0;
     background-color: #F5F5F5;
-    z-index: 5;
+    z-index: 50;
     // border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
 }
 
 .dropdownIcon {
     height: 20px;
+    cursor: pointer;
 }
 
 .logo {
     height: 65px;
     width: 65px;
+}
+
+.closeIcon {
+    height: 50px;
+}
+
+.d-none {
+    display: none;
+}
+
+#dropdown {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 74vh;
+    z-index: 20;
+
+    img {
+        cursor: pointer;
+    }
+
+    .navContainer {
+        height: 58vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .nav {
+        background:
+            linear-gradient(to right, black 5px, transparent 4px) 0 100%,
+            linear-gradient(to top, black 5px, transparent 4px) 0 100%;
+        background-repeat: no-repeat;
+        background-size: 32px 46px;
+        font-size: 78px;
+        font-weight: 800;
+        padding: 13px;
+        padding-left: 30px;
+        cursor: pointer;
+        &:hover {
+            animation: navAnimation 0.3s ease-out;
+
+            animation-fill-mode: forwards;
+        }
+    }
+
+
+
+
+    .slantedContainer {
+        height: 16vh;
+        width: 100%;
+        background: linear-gradient(to bottom left, #F5F5F5 calc(50% - 1px), #000000 calc(50% + 1px)) no-repeat 0px 0px / 100vw 16vh;
+    }
+
+}
+
+
+@keyframes navAnimation {
+    0% {
+        background:
+            linear-gradient(to right, black 5px, transparent 4px) 0 100%,
+            linear-gradient(to top, black 5px, transparent 4px) 100% 100%,
+            linear-gradient(to top, transparent 5px, transparent 4px) 100% 100%;
+        background-repeat: no-repeat;
+        background-size: 100% 46px;
+        font-size: 78px;
+        font-weight: 800;
+        padding: 13px;
+        padding-left: 30px;
+    }
+
+    25% {
+        background:
+            linear-gradient(to right, transparent 5px, transparent 4px) 0 100%,
+            linear-gradient(to top, black 5px, transparent 4px) 100% 100%;
+        background-repeat: no-repeat;
+        background-size: 100% 46px;
+        font-size: 78px;
+        font-weight: 800;
+        padding: 13px;
+        padding-left: 30px;
+    }
+
+    100% {
+        background:
+            linear-gradient(to right, transparent 5px, transparent 4px) 0 100%,
+            linear-gradient(to top, black 5px, transparent 4px) 100% 100%;
+        background-repeat: no-repeat;
+        background-size: 50% 46px;
+        font-size: 78px;
+        font-weight: 800;
+        padding: 13px;
+        padding-left: 30px;
+
+    }
 }

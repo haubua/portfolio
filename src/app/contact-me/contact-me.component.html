@@ -1,18 +1,28 @@
-<div>
+<!-- <div class="slantedContainer"></div> -->
+<div class="headline">
+    <h1>Say Hi!</h1>
+</div>
     <div class="contactMe">
-        <div class="headline">
-            <h1>Say Hi!</h1>
-        </div>
+        
         <div class="container">
-            <span class="firstRow">Want to discuss a new project?</span>
-            <span class="secondRow">Say hello! let's discuss your ideas and make it happen</span>
+            <span class="firstRow" [ngStyle]="{'position': 'absolute', 'top': '100px'}">Want to discuss a new project?</span>
+            <span class="secondRow" [ngStyle]="{'position': 'absolute', 'top': '130px'}">Say hello! let's discuss your ideas and make it happen</span>
             <form action="">
-                <input type="text" placeholder="Your Name" [ngStyle]="{'position': 'absolute'}">
-                <input type="email" placeholder="Your email" [ngStyle]="{'position': 'absolute', 'top': '400px'}">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your message" [ngStyle]="{'position': 'absolute', 'top': '490px'}"></textarea>
-                <button [ngStyle]="{'position': 'absolute', 'top': '690px'}">Send message</button>
+                <div id="nameInput" [ngStyle]="{'position': 'absolute', 'top': '200px'}">
+                    <div id="yourName">Your Name</div>
+                    <input type="text" placeholder="Your Name">
+                </div>
+                <div id="emailInput" [ngStyle]="{'position': 'absolute', 'top': '280px'}">
+                    <div id="yourEmail">Your email</div>
+                    <input type="email" placeholder="Your email">
+                </div>
+                <div id="messageInput" [ngStyle]="{'position': 'absolute', 'top': '360px'}">
+                    <div id="yourMessage">Your message</div>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+                </div>
+
+                <button [ngStyle]="{'position': 'absolute', 'top': '620px'}">Send message</button>
             </form>
             <img src="../../assets/img/whiteArrow.png" alt="" (click)="scrollToTop()">
         </div>
     </div>
-</div>
