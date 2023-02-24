@@ -10,8 +10,10 @@ platformBrowserDynamic().bootstrapModule(AppModule)
 document.addEventListener(
   'scroll', () => {
     let position = document.documentElement.scrollTop ;
+    console.log(position)
     if (position > 1400) {
       document.getElementById('skillsArrow')?.classList.add('arrowAnimation')
+      
     } 
 
     if (position > 2400) {

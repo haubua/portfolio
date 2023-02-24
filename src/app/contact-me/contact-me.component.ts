@@ -46,18 +46,18 @@ export class ContactMeComponent {
     )
       .then(function () {
         setTimeout(() => {
-          document.getElementById('pwReset').classList.add('pwReset');
-          document.getElementById('pwReset').classList.remove('d-none');
+          document.getElementById('emailSend').classList.add('emailSend');
+          document.getElementById('emailSend').classList.remove('d-none');
           document.getElementById('container').classList.add('opacity20');
         }, 300)
         setTimeout(() => {
-          document.getElementById('pwReset').classList.add('pwResetD-none');
+          document.getElementById('emailSend').classList.add('emailSendD-none');
         }, 2300)
         setTimeout(() => {
           document.getElementById('container').classList.remove('opacity20');
-          document.getElementById('pwReset').classList.remove('pwResetD-none');
-          document.getElementById('pwReset').classList.remove('pwReset');
-          document.getElementById('pwReset').classList.add('d-none');
+          document.getElementById('emailSend').classList.remove('emailSendD-none');
+          document.getElementById('emailSend').classList.remove('emailSend');
+          document.getElementById('emailSend').classList.add('d-none');
         }, 3200)
       }).catch(function () {
         alert('Request could not be sent, please email me at robert.hahn91@gmx.at')
