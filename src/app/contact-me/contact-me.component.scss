@@ -129,7 +129,9 @@ h1 {
         width: fit-content;
         transition: 150ms ease-in-out;
         margin-top: 40px;
+    }
 
+    .buttonHover {
         &:hover {
             transition: 150ms ease-in-out;
             padding-left: 45px;
@@ -137,7 +139,6 @@ h1 {
             font-weight: 600;
         }
     }
-
     img {
         position: absolute;
         top: 700px;
@@ -246,3 +247,71 @@ textarea:focus::placeholder {
 // #nameInput:target-within
 // outline: 4px solid white;
 // }
+
+
+.d-none {
+    display: none !important;
+}
+
+.pwReset {
+    position: absolute;
+    height: 74px;
+    width: 350px;
+    background-color: black;
+    color: white;
+    border: 3px solid #F5F5F5;
+    animation: fadeInY 1s ease 0s 1 normal forwards;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 23px;
+    font-weight: 400;
+    z-index: 100;
+}
+
+.pwResetD-none {
+    animation: fadeOutY 1s ease 0s 1 normal backwards;
+}
+
+@keyframes fadeOutY {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+
+    0% {
+        transform: translateY(300%);
+    }
+
+    100% {
+        transform: translateY(1000%);
+    }
+}
+
+.opacity20 {
+    opacity: 20%;
+}
+
+
+
+@keyframes fadeInY {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+    0% {
+        transform: translateY(1000%);
+    }
+
+    100% {
+        transform: translateY(300%);
+    }
+}

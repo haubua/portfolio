@@ -11,9 +11,17 @@
                 <h3>{{ projectHeadline[i] }}</h3>
                 <div>{{ projectTypes[i] }}</div>
                 <span>{{ projectDescription[i] }}</span>
-                <div class="button-container" [ngClass]="{buttonLeft: even, buttonRight: odd}">
-                    <button [ngStyle]="{'curser': 'pointer'}">Try out</button>
-                    <button>GitHub</button>
+                <div [ngClass]="{buttonLeft: even, buttonRight: odd}">
+                    <div class="button-container">
+
+                    
+                    <a href="{{ projectlink[i] }}" target="_blank">
+                        <button [ngStyle]="{'curser': 'pointer'}">Try out</button>
+                    </a>
+                    <a href="{{ githublink[i] }}" target="_blank">
+                        <button>GitHub</button>
+                    </a>
+                </div>
                 </div>
             </div>
 

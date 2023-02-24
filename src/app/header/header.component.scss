@@ -13,7 +13,21 @@ header {
     right: 0;
     background-color: #F5F5F5;
     z-index: 50;
-    // border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+    @media (max-width: 1100px) {
+        padding-left: 12vw;
+        padding-right: 12vw;
+    }
+
+    @media (max-width: 600px) {
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
+
+    @media (max-width: 400px) {
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
 
 }
 
@@ -25,27 +39,46 @@ header {
 .logo {
     height: 65px;
     width: 65px;
+    cursor: pointer;
 }
 
 .closeIcon {
     height: 50px;
+    cursor: pointer;
 }
 
 .d-none {
     display: none;
 }
 
-#dropdown {
+.dropdownD-none {
+    animation: closeDropdownAnimation 0.5s ease-in-out;
+    animation-fill-mode: forwards;
     margin-top: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    background-color: #F5F5F5;
     height: 74vh;
     z-index: 20;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 
-    img {
-        cursor: pointer;
+    // @media (max-width: 900px) {
+    //     font-size: 61px;
+    // }
+
+
+    // @media (max-width: 700px) {
+    //     font-size: 48px;
+    // }
+
+    a {
+        text-decoration: none;
+        color: black;
     }
 
     .navContainer {
@@ -53,6 +86,14 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+
+        @media (max-width: 700px) {
+            height: 44vh;
+        }
+        
+        @media (max-width: 400px) {
+            height: 33vh;
+        }
     }
 
     .nav {
@@ -66,11 +107,142 @@ header {
         padding: 13px;
         padding-left: 30px;
         cursor: pointer;
+
         &:hover {
             animation: navAnimation 0.3s ease-out;
 
             animation-fill-mode: forwards;
         }
+
+        @media (max-width: 900px) {
+            font-size: 61px;
+        }
+
+        @media (max-width: 700px) {
+            padding: 6px;
+            padding-left: 22px;
+            font-size: 48px;
+        }
+        
+        @media (max-width: 700px) {
+            font-size: 39px;
+            background:
+            linear-gradient(to right, black 3px, transparent 4px) 0 100%,
+            linear-gradient(to top, black 3px, transparent 4px) 0 100%;
+            background-size: 23px 31px;
+            background-repeat: no-repeat;
+        }
+        @media (max-width: 400px) {
+            font-size: 30px;
+            background:
+            linear-gradient(to right, black 3px, transparent 4px) 0 100%,
+            linear-gradient(to top, black 3px, transparent 4px) 0 100%;
+            background-size: 19px 25px;
+            background-repeat: no-repeat;
+            padding-left: 16px;
+        }
+    }
+
+    .slantedContainer {
+        height: 16vh;
+        width: 100%;
+        background: linear-gradient(to bottom left, #F5F5F5 calc(50% - 1px), #000000 calc(50% + 1px)) no-repeat 0px 0px / 100vw 16vh;
+    }
+
+}
+
+.dropdown {
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 74vh;
+    z-index: 20;
+    transition: 0.5s ease-in-out;
+    animation: dropdownAnimation 0.5s ease-in-out;
+    background-color: #F5F5F5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    // @media (max-width: 900px) {
+    //     font-size: 61px;
+    // }
+
+
+    img {
+        cursor: pointer;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .navContainer {
+        height: 58vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        @media (max-width: 700px) {
+            height: 44vh;
+        }
+        @media (max-width: 400px) {
+            height: 33vh;
+        }
+    }
+
+    .nav {
+        background:
+            linear-gradient(to right, black 5px, transparent 4px) 0 100%,
+            linear-gradient(to top, black 5px, transparent 4px) 0 100%;
+        background-repeat: no-repeat;
+        background-size: 32px 46px;
+        font-size: 78px;
+        font-weight: 800;
+        padding: 13px;
+        padding-left: 30px;
+        cursor: pointer;
+
+        &:hover {
+            animation: navAnimation 0.3s ease-out;
+
+            animation-fill-mode: forwards;
+        }
+
+        @media (max-width: 900px) {
+            font-size: 61px;
+        }
+
+        @media (max-width: 700px) {
+            padding: 6px;
+            padding-left: 22px;
+            font-size: 48px;
+        }
+
+        @media (max-width: 700px) {
+            font-size: 39px;
+            background:
+            linear-gradient(to right, black 3px, transparent 4px) 0 100%,
+            linear-gradient(to top, black 3px, transparent 4px) 0 100%;
+            background-size: 23px 31px;
+            background-repeat: no-repeat;
+        }
+
+        @media (max-width: 400px) {
+            font-size: 30px;
+            background:
+            linear-gradient(to right, black 3px, transparent 4px) 0 100%,
+            linear-gradient(to top, black 3px, transparent 4px) 0 100%;
+            background-size: 19px 25px;
+            background-repeat: no-repeat;
+            padding-left: 16px;
+        }
+
+
     }
 
 
@@ -79,7 +251,7 @@ header {
     .slantedContainer {
         height: 16vh;
         width: 100%;
-        background: linear-gradient(to bottom left, #F5F5F5 calc(50% - 1px), #000000 calc(50% + 1px)) no-repeat 0px 0px / 100vw 16vh;
+        background: linear-gradient(to bottom left, #F5F5F5 calc(50% - 1px), #000000 calc(50% + 1px)) no-repeat 0px 1px / 100vw 16vh;
     }
 
 }
@@ -93,10 +265,6 @@ header {
             linear-gradient(to top, transparent 5px, transparent 4px) 100% 100%;
         background-repeat: no-repeat;
         background-size: 100% 46px;
-        font-size: 78px;
-        font-weight: 800;
-        padding: 13px;
-        padding-left: 30px;
     }
 
     25% {
@@ -105,10 +273,6 @@ header {
             linear-gradient(to top, black 5px, transparent 4px) 100% 100%;
         background-repeat: no-repeat;
         background-size: 100% 46px;
-        font-size: 78px;
-        font-weight: 800;
-        padding: 13px;
-        padding-left: 30px;
     }
 
     100% {
@@ -117,10 +281,27 @@ header {
             linear-gradient(to top, black 5px, transparent 4px) 100% 100%;
         background-repeat: no-repeat;
         background-size: 50% 46px;
-        font-size: 78px;
-        font-weight: 800;
-        padding: 13px;
-        padding-left: 30px;
+    }
+}
+
+@keyframes dropdownAnimation {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes closeDropdownAnimation {
+    0% {
+        transform: translateY(0%);
+
+    }
+
+    100% {
+        transform: translateY(-100%);
 
     }
 }

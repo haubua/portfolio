@@ -8,7 +8,26 @@ footer {
     padding-top: 1vh;
     padding-bottom: 1vh;
     height: 16vh;
-    
+    @media (max-width: 1100px) {
+        padding-left: 12vw;
+        padding-right: 12vw;
+    }
+
+    @media (max-width: 600px) {
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
+
+    @media (max-width: 450px) {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+
+    @media (max-width: 400px) {
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
     .logo {
         height: 65px;
         width: 65px;
@@ -26,8 +45,11 @@ footer {
             cursor: pointer;
             &:hover {
                 transform: translateY(-10px);
-                // position: relative;
-                // bottom: 10px;
+               
+            }
+            @media (max-width: 450px) {
+               margin-left: 8px;
+               margin-right: 8px;
             }
         }
         .gitIcon {
@@ -35,4 +57,12 @@ footer {
             width: 32px;
         }
     }   
+
+    #logoContainer {
+        @media (max-width: 450px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+         }
+    }
 }

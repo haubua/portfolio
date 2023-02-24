@@ -2,27 +2,33 @@
 <div class="headline">
     <h1>Say Hi!</h1>
 </div>
-    <div class="contactMe">
-        
-        <div class="container">
-            <span class="firstRow" [ngStyle]="{'position': 'absolute', 'top': '100px'}">Want to discuss a new project?</span>
-            <span class="secondRow" [ngStyle]="{'position': 'absolute', 'top': '130px'}">Say hello! let's discuss your ideas and make it happen</span>
-            <form action="">
-                <div id="nameInput" [ngStyle]="{'position': 'absolute', 'top': '200px'}">
-                    <div id="yourName">Your Name</div>
-                    <input type="text" placeholder="Your Name">
-                </div>
-                <div id="emailInput" [ngStyle]="{'position': 'absolute', 'top': '280px'}">
-                    <div id="yourEmail">Your email</div>
-                    <input type="email" placeholder="Your email">
-                </div>
-                <div id="messageInput" [ngStyle]="{'position': 'absolute', 'top': '360px'}">
-                    <div id="yourMessage">Your message</div>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
-                </div>
+<div class="contactMe">
 
-                <button [ngStyle]="{'position': 'absolute', 'top': '620px'}">Send message</button>
-            </form>
-            <img src="../../assets/img/whiteArrow.png" alt="" (click)="scrollToTop()">
-        </div>
+    <div class="container" id="container">
+        <span class="firstRow" [ngStyle]="{'position': 'absolute', 'top': '100px'}">Want to discuss a new
+            project?</span>
+        <span class="secondRow" [ngStyle]="{'position': 'absolute', 'top': '130px'}">Say hello! let's discuss your ideas
+            and make it happen</span>
+        <form (submit)="sendMail()" method="post" ngNativeValidate #form>
+            <div id="nameInput" [ngStyle]="{'position': 'absolute', 'top': '200px'}">
+                <div id="yourName">Your Name</div>
+                <input required type="text" placeholder="Your Name" name="name" #nameField>
+            </div>
+            <div id="emailInput" [ngStyle]="{'position': 'absolute', 'top': '280px'}">
+                <div id="yourEmail">Your email</div>
+                <input required type="email" placeholder="Your email" name="email" #emailField>
+            </div>
+            <div id="messageInput" [ngStyle]="{'position': 'absolute', 'top': '360px'}">
+                <div id="yourMessage">Your message</div>
+                <textarea required name="" id="" cols="30" rows="10" placeholder="Your message" name="message"
+                    #messageField></textarea>
+            </div>
+
+            <button class="buttonHover" [ngStyle]="{'position': 'absolute', 'top': '620px'}" #button>Send message</button>
+        </form>
+        <img src="../../assets/img/whiteArrow.png" alt="" (click)="scrollToTop()">
     </div>
+    <div id="pwReset" class="d-none pwReset">
+        Request has been sent!
+    </div>
+</div>

@@ -16,10 +16,14 @@ document.addEventListener(
 
     if (position > 2400) {
       document.getElementById('portfolioArrow')?.classList.add('arrowAnimation')
+      
     }
   },
   {passive:true }
 )
+
+
+
 
 
 

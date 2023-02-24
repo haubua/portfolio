@@ -32,7 +32,12 @@ export class HomeComponent implements OnInit {
 
  ngOnInit(): void {
   this.getValue().subscribe((value) => {
-    console.log(this.dropdown.value)
+    if (this.dropdown.value == true) {
+      document.getElementById('contentContainer').classList.remove('overflow');
+    } else {
+      document.getElementById('contentContainer').classList.add('overflow');
+    }
+    
   })
  }
 

@@ -24,14 +24,18 @@ export class HeaderComponent implements OnInit{
   }
 
   openMenu() {
-    document.getElementById('dropdown')?.classList.add('dropdown');
     document.getElementById('dropdown')?.classList.remove('d-none')
+    document.getElementById('dropdown')?.classList.add('dropdown');
     this.home.setValue(false);
   }
 
   closeMenu() {
+    document.getElementById('dropdown')?.classList.add('dropdownD-none');
     document.getElementById('dropdown')?.classList.remove('dropdown');
-    document.getElementById('dropdown')?.classList.add('d-none');
-    this.home.setValue(true)
+    setTimeout( () => {
+      document.getElementById('dropdown')?.classList.remove('dropdownD-none');
+      document.getElementById('dropdown')?.classList.add('d-none')
+    },500)
+    this.home.setValue(true)    
   } 
 }

@@ -16,4 +16,6 @@ export class ProjectsComponent {
     'With Pokédex I can get a perfect overview of all Pokémons, with the integrated searchfunction you can find the pokemon you are looking for faster. The project was created with HTML, CSS and JavaScript and all data is fetched from a REST API. ',
     'Ring of Fire also known as Circle of Death is a drinking game with cards. By connecting to Google Firebase, the game is shared with others and can played online with all of your friends.',
   ];
+  projectlink: string[] = ['http://robert-hahn.developerakademie.net/login.html', 'https://robert-hahn.developerakademie.net/elpolloloco/index.html', 'https://robert-hahn.developerakademie.net/pokedex/index.html', 'https://robert-hahn.developerakademie.net/ringoffire/'];
+  githublink: string[] = ['https://github.com/haubua/Join', 'https://github.com/haubua/El-Pollo-Loco', 'https://github.com/haubua/pokedex', 'https://github.com/haubua/ringoffire/tree/main/ringoffire-main/ringoffire-main'];
 }
