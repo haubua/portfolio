@@ -1,8 +1,8 @@
 <header>
-    <img *ngIf="this.dropdown" src="../../assets/img/logo_white.png" class="logo" alt="" (click)="scrollToTop()">
-    <img *ngIf="!this.dropdown" src="../../assets/img/logo_white.png" class="logo" alt="" (click)="closeMenu()">
-    <img *ngIf="this.dropdown" src="../../assets/img/dropdownIcon.png" class="dropdownIcon" alt="" (click)="openMenu()">
-    <img *ngIf="!this.dropdown" src="../../assets/img/closeIcon.svg" class="closeIcon" alt="" (click)="closeMenu()">
+    <img *ngIf="this.dropdown" src="assets/img/logo_white.png" class="logo" alt="" (click)="scrollToTop()">
+    <img *ngIf="!this.dropdown" src="assets/img/logo_white.png" class="logo" alt="" (click)="closeMenu()">
+    <img *ngIf="this.dropdown" src="assets/img/dropdownIcon.png" class="dropdownIcon" alt="" (click)="openMenu()">
+    <img *ngIf="!this.dropdown" src="assets/img/closeIcon.svg" class="closeIcon" alt="" (click)="closeMenu()">
 </header>
 <div id="dropdown" class="d-none">
     <div class="navContainer">
@@ -12,6 +12,3 @@
     </div>
     <div class="slantedContainer"></div>
 </div>
-
-
-<!-- *ngIf="!this.dropdown" class="dropdown"-->

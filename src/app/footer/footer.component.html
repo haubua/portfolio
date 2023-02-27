@@ -1,18 +1,22 @@
 <footer>
     <div id="logoContainer">
-        <img class="logo" src="../../assets/img/logo_white.png" alt="" (click)="scrollToTop()">
+        <img class="logo" src="assets/img/logo_white.png" alt="" (click)="scrollToTop()">
         <div [ngStyle]="{'color': '#FFFCF3', 'font-family': 'poppins'}">&copy; Robert Hahn 2023</div>
     </div>
-    <div class="links">
-
-        <a href="https://github.com/haubua" target="_blank">
-            <img src="../../assets/img/githubButton.png" alt="" >
-        </a>
-        
-        <img src="../../assets/img/emailButton.png" alt="">
-        <a href="https://www.linkedin.com/in/robert-hahn-4a20a9267/" target="_blank">
-            <img src="../../assets/img/linkedinButton.png" alt="">
-        </a>
-
+    <div>
+        <div class="links">
+            <a href="https://github.com/haubua" target="_blank">
+                <img src="assets/img/githubButton.png" alt="">
+            </a>
+            <a href="mailto:robert.hahn91@gmx.at" sub>
+                <img src="assets/img/emailButton.png" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/robert-hahn-4a20a9267/" target="_blank">
+                <img src="assets/img/linkedinButton.png" alt="">
+            </a>
+        </div>
+        <div (click)="showLegalNotice()"
+            [ngStyle]="{'color': '#FFFCF3', 'font-family': 'Overpass', 'margin': '8px', 'cursor': 'pointer'}">Legal
+            notice</div>
     </div>
 </footer>

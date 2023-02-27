@@ -8,8 +8,8 @@ import { HomeComponent } from '../home/home.component';
   styleUrls: ['./header.component.scss']
 })
 
-export class HeaderComponent implements OnInit{
-  constructor(private home: HomeComponent) {}
+export class HeaderComponent implements OnInit {
+  constructor(private home: HomeComponent) { }
   dropdown: boolean;
 
 
@@ -23,19 +23,21 @@ export class HeaderComponent implements OnInit{
     window.scrollTo(0, 0);
   }
 
+
   openMenu() {
     document.getElementById('dropdown')?.classList.remove('d-none')
     document.getElementById('dropdown')?.classList.add('dropdown');
     this.home.setValue(false);
   }
 
+
   closeMenu() {
     document.getElementById('dropdown')?.classList.add('dropdownD-none');
     document.getElementById('dropdown')?.classList.remove('dropdown');
-    setTimeout( () => {
+    setTimeout(() => {
       document.getElementById('dropdown')?.classList.remove('dropdownD-none');
       document.getElementById('dropdown')?.classList.add('d-none')
-    },500)
-    this.home.setValue(true)    
-  } 
+    }, 500)
+    this.home.setValue(true)
+  }
 }

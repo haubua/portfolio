@@ -34,7 +34,6 @@ export class ContactMeComponent {
     fd.append('email', emailField.value);
     fd.append('message', messageField.value);
     this.action(fd)
-
   }
 
   async action(fd) {

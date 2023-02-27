@@ -1,17 +1,9 @@
-// .slantedContainer {
-//     height: 250px;
-//     width: 100%;
-//     position: relative;
-//     z-index: 9;
-//     margin-bottom: 0px;
-//     background: linear-gradient(to bottom left, #F5F5F5 calc(50% - 2px), red calc(50% - 1px), red calc(50% + 1px), #000000 calc(50% + 2px)) no-repeat 0px 0px / 100vw 250px;
-// }
-
 .headline {
     display: flex;
     padding-left: 17vw;
     padding-right: 17vw;
     background: linear-gradient(to bottom left, #F5F5F5 calc(50% - 1px), #000000 calc(50% + 1px)) no-repeat 0px 0px / 100vw 250px;
+    height: 249px;
 
     @media (max-width: 1100px) {
         padding-left: 12vw;
@@ -20,6 +12,7 @@
 
     @media (max-width: 700px) {
         background: linear-gradient(to bottom left, #F5F5F5 calc(50% - 1px), #000000 calc(50% + 1px)) no-repeat 0px 0px / 100vw 200px;
+        height: 199px;
     }
 
     @media (max-width: 600px) {
@@ -29,32 +22,28 @@
 
     @media (max-width: 500px) {
         background: linear-gradient(to bottom left, #F5F5F5 calc(50% - 1px), #000000 calc(50% + 1px)) no-repeat 0px 0px / 100vw 150px;
+        height: 149px;
     }
 
     @media (max-width: 400px) {
         padding-left: 4vw;
         padding-right: 4vw;
         background: linear-gradient(to bottom left, #F5F5F5 calc(50% - 1px), #000000 calc(50% + 1px)) no-repeat 0px 0px / 100vw 120px;
+        height: 119px;
     }
 }
 
 h1 {
     position: relative;
     z-index: 10;
-
     font-size: 78px;
     font-weight: 800;
     margin-top: 196px;
-    margin-bottom: -39px;
     color: #FFFCF3;
 
-    // margin-top: 100px;
-
-    // height: 300px;
     &:hover {
         color: #13C197;
     }
-
 
     @media (max-width: 900px) {
         font-size: 65px;
@@ -83,7 +72,6 @@ h1 {
         font-size: 34px;
         margin-top: 119px;
     }
-
 
     @media (max-width: 350px) {
         font-size: 30px;
@@ -116,8 +104,6 @@ h1 {
         padding-right: 4vw;
     }
 
-
-
     form {
         display: flex;
         flex-direction: column;
@@ -142,14 +128,15 @@ h1 {
         @media (max-width: 700px) {
             font-size: 26px;
         }
+
         @media (max-width: 550px) {
             max-width: 76vw;
             text-align: center;
-          }
-          @media (max-width: 487px) {
-           top: 80px !important;
-          }
+        }
 
+        @media (max-width: 487px) {
+            top: 80px !important;
+        }
     }
 
     .secondRow {
@@ -168,8 +155,8 @@ h1 {
         }
 
         @media (max-width: 550px) {
-          max-width: 76vw;
-          text-align: center;
+            max-width: 76vw;
+            text-align: center;
         }
     }
 
@@ -215,6 +202,7 @@ h1 {
         width: 550px;
         color: #FFFCF3;
         resize: none;
+        outline-color: #FFFCF3;
 
         @media (max-width: 812px) {
             width: 68vw;
@@ -298,9 +286,9 @@ h1 {
     font-weight: 400;
 }
 
-
 input:focus {
     border: 2px solid #FFFCF3;
+    outline-color: #FFFCF3;
 
     ::placeholder {
         color: #000000;
@@ -313,7 +301,6 @@ input:focus::placeholder {
 
 textarea:focus::placeholder {
     color: #000000;
-
 }
 
 #yourName {
@@ -382,11 +369,6 @@ textarea:focus::placeholder {
     color: #FFFCF3
 }
 
-// #nameInput:target-within
-// outline: 4px solid white;
-// }
-
-
 .d-none {
     display: none !important;
 }
@@ -442,8 +424,6 @@ textarea:focus::placeholder {
 .opacity20 {
     opacity: 20%;
 }
-
-
 
 @keyframes fadeInY {
     from {

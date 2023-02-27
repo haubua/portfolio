@@ -4,10 +4,11 @@ footer {
     padding-right: 17vw;
     display: flex;
     justify-content: space-between;
+    text-align: center;
     align-items: center;
     padding-top: 1vh;
     padding-bottom: 1vh;
-    height: 16vh;
+
     @media (max-width: 1100px) {
         padding-left: 12vw;
         padding-right: 12vw;
@@ -23,16 +24,30 @@ footer {
         align-items: center;
     }
 
-
     @media (max-width: 400px) {
         padding-left: 4vw;
         padding-right: 4vw;
     }
+
+    @media (max-height: 915px) {
+        height: 20vh;
+    }
+
+    @media (max-height: 680px) {
+        height: 23vh;
+    }
+
     .logo {
         height: 65px;
         width: 65px;
         margin-bottom: 10px;
-       cursor: pointer;
+        cursor: pointer;
+
+        @media (max-width: 450px) {
+            height: 55px;
+            width: 55px;
+            margin-bottom: 0px;
+        }
     }
 
     .links {
@@ -43,26 +58,31 @@ footer {
             transition: linear 125ms;
             padding: 5px;
             cursor: pointer;
+
             &:hover {
                 transform: translateY(-10px);
-               
             }
+
             @media (max-width: 450px) {
-               margin-left: 8px;
-               margin-right: 8px;
+                margin-left: 8px;
+                margin-right: 8px;
             }
         }
+
         .gitIcon {
             height: 32px;
             width: 32px;
         }
-    }   
+
+        .div {
+            color: #FFFCF3;
+        }
+    }
 
     #logoContainer {
         @media (max-width: 450px) {
             display: flex;
-            flex-direction: column;
             align-items: center;
-         }
+        }
     }
 }

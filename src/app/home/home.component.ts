@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { HeaderComponent } from '../header/header.component';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
 
@@ -40,6 +39,8 @@ export class HomeComponent implements OnInit {
     
   })
  }
+
+
 
  
  

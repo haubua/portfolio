@@ -1,10 +1,12 @@
 <div>
     <div class="projects" *ngFor="let project of projects; let i=index; let even=even; let odd=odd">
         <div class="projects-number" [ngClass]="{flexStart: odd}">{{ i+1 }} / {{ projects.length }}</div>
-        <div class="container" [ngClass]="{left: even, right: odd}">
-            <div class="imgContainer" [ngClass]="{right: odd, left: even, imgContainerLeft: even, imgContainerRight: odd}">
-                <img [ngClass]="{arrowCircleLeft: even, arrowCircleRight: odd}" src="../../assets/img/arrowCircle.png" alt="">
-                <img class="img" src="../../assets/img/{{ projects[i] }}" alt="">
+        <div class="container" id="container{{i}}" [ngClass]="{left: even, right: odd}">
+            <div class="imgContainer"
+                [ngClass]="{right: odd, left: even, imgContainerLeft: even, imgContainerRight: odd}">
+                <img [ngClass]="{arrowCircleLeft: even, arrowCircleRight: odd}" src="assets/img/arrowCircle.png"
+                    alt="">
+                <img class="img" src="assets/img/{{ projects[i] }}" alt="">
             </div>
 
             <div class="description" [ngClass]="{marginLeft: even, marginRight: odd}">
@@ -14,14 +16,14 @@
                 <div [ngClass]="{buttonLeft: even, buttonRight: odd}">
                     <div class="button-container">
 
-                    
-                    <a href="{{ projectlink[i] }}" target="_blank">
-                        <button [ngStyle]="{'curser': 'pointer'}">Try out</button>
-                    </a>
-                    <a href="{{ githublink[i] }}" target="_blank">
-                        <button>GitHub</button>
-                    </a>
-                </div>
+
+                        <a href="{{ projectlink[i] }}" target="_blank">
+                            <button [ngStyle]="{'curser': 'pointer'}">Try it out</button>
+                        </a>
+                        <a href="{{ githublink[i] }}" target="_blank">
+                            <button>GitHub</button>
+                        </a>
+                    </div>
                 </div>
             </div>
 

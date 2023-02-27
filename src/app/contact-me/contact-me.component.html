@@ -1,9 +1,7 @@
-<!-- <div class="slantedContainer"></div> -->
 <div class="headline">
     <h1>Say Hi!</h1>
 </div>
 <div class="contactMe">
-
     <div class="container" id="container">
         <span class="firstRow" [ngStyle]="{'position': 'absolute', 'top': '100px'}">Want to discuss a new
             project?</span>
@@ -24,9 +22,10 @@
                     #messageField></textarea>
             </div>
 
-            <button class="buttonHover" [ngStyle]="{'position': 'absolute', 'top': '620px'}" #button>Send message</button>
+            <button class="buttonHover" [ngStyle]="{'position': 'absolute', 'top': '620px'}" #button>Send
+                message</button>
         </form>
-        <img src="../../assets/img/whiteArrow.png" alt="" (click)="scrollToTop()">
+        <img src="assets/img/whiteArrow.png" alt="" (click)="scrollToTop()">
     </div>
     <div id="emailSend" class="d-none emailSend">
         Request has been sent!
