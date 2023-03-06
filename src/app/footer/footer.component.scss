@@ -8,6 +8,7 @@ footer {
     align-items: center;
     padding-top: 1vh;
     padding-bottom: 1vh;
+    height: 16vh;
 
     @media (max-width: 1100px) {
         padding-left: 12vw;
@@ -22,6 +23,7 @@ footer {
     @media (max-width: 450px) {
         flex-direction: column-reverse;
         align-items: center;
+        height: unset;
     }
 
     @media (max-width: 400px) {
@@ -29,13 +31,13 @@ footer {
         padding-right: 4vw;
     }
 
-    @media (max-height: 915px) {
-        height: 20vh;
-    }
+    // @media (max-height: 915px) {
+    //     height: 20vh;
+    // }
 
-    @media (max-height: 680px) {
-        height: 23vh;
-    }
+    // @media (max-height: 680px) {
+    //     height: 23vh;
+    // }
 
     .logo {
         height: 65px;

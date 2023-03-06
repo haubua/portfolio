@@ -23,17 +23,16 @@ export class ContactMeComponent {
     let nameField = this.nameField.nativeElement;
     let emailField = this.emailField.nativeElement;
     let messageField = this.messageField.nativeElement;
-    let button = this.button.nativeElement;
-    nameField.disabled = true;
-    emailField.disabled = true;
-    messageField.disabled = true;
-    button.disabled = true;
-    button.classList.remove('buttonHover');
     let fd = new FormData();
     fd.append('name', nameField.value);
     fd.append('email', emailField.value);
     fd.append('message', messageField.value);
     this.action(fd)
+    setTimeout(() => {
+      nameField.value = '';
+      emailField.value = ''
+      messageField.value = ''
+    }, 2100)
   }
 
   async action(fd) {

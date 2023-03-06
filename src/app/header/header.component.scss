@@ -168,13 +168,13 @@ header {
     left: 0;
     right: 0;
 
-    @media (max-height: 915px) {
-        height: 70vh;
-    }
+    // @media (max-height: 915px) {
+    //     height: 70vh;
+    // }
 
-    @media (max-height: 680px) {
-        height: 67vh;
-    }
+    // @media (max-height: 680px) {
+    //     height: 67vh;
+    // }
 
     img {
         cursor: pointer;
